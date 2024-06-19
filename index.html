@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание вашего сайта">
+    <meta name="keywords" content="ключевые слова, для, вашего, сайта">
+    <title>Фильтр помещений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Фильтр помещений</h1>
+        <div>
+            <label for="searchRoom">Поиск по названию помещения:</label>
+            <input type="text" id="searchRoom" placeholder="Введите название помещения">
+        </div>
+        <div>
+            <label for="searchNorm">Поиск по нормативу:</label>
+            <input type="text" id="searchNorm" placeholder="Введите норматив">
+        </div>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Помещение</th>
+                    <th>Приток</th>
+                    <th>Вытяжка</th>
+                    <th>Норматив</th>
+                    <th>Примечание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Данные будут добавлены динамически -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
